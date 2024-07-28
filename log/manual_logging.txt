@@ -1,0 +1,164 @@
+Vanilla-Version:
+(speml) florian.haubenberger@AMACRHQWL4V6T watermarknn-master % python train.py --batch_size 100 --max_epochs 5 --runname train --wm_batch_size 2 --wmtrain 
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+torch.Size([1, 10])
+==> Preparing data..
+Using CIFAR10 dataset.
+Files already downloaded and verified
+Files already downloaded and verified
+Loading watermark images
+==> Building model..
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s466ms | Loss: 2.302 | Acc: 8.000% (8/100)                              
+
+Epoch: 0
+ [=========================== 500/500 ============================>]  Step: 3s460ms | Tot: 28m45s | Loss: 1.710 | Acc: 36.000% (18480/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s155ms | Tot: 1m56s | Loss: 1.579 | Acc: 45.000% (4587/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s461ms | Loss: 3.259 | Acc: 12.000% (12/100)                            
+Saving..
+
+Epoch: 1
+ [=========================== 500/500 ============================>]  Step: 3s470ms | Tot: 28m57s | Loss: 1.236 | Acc: 55.000% (28213/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s157ms | Tot: 1m55s | Loss: 1.191 | Acc: 60.000% (6011/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 28ms | Tot: 1s459ms | Loss: 2.676 | Acc: 22.000% (22/100)                            
+Saving..
+
+Epoch: 2
+ [=========================== 500/500 ============================>]  Step: 3s474ms | Tot: 29m194ms | Loss: 0.964 | Acc: 66.000% (33844/51000)                   
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s155ms | Tot: 1m55s | Loss: 1.214 | Acc: 61.000% (6104/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s446ms | Loss: 1.944 | Acc: 28.000% (28/100)                            
+Saving..
+
+Epoch: 3
+ [=========================== 500/500 ============================>]  Step: 3s473ms | Tot: 28m59s | Loss: 0.801 | Acc: 72.000% (36903/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s155ms | Tot: 1m56s | Loss: 0.736 | Acc: 74.000% (7482/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s437ms | Loss: 1.821 | Acc: 29.000% (29/100)                            
+Saving..
+
+Epoch: 4
+ [=========================== 500/500 ============================>]  Step: 3s473ms | Tot: 28m57s | Loss: 0.704 | Acc: 75.000% (38713/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s168ms | Tot: 1m55s | Loss: 1.083 | Acc: 66.000% (6694/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s488ms | Loss: 1.685 | Acc: 38.000% (38/100)                            
+Saving..
+
+
+Mein Code:
+RESNET:
+(speml) florian.haubenberger@AMACRHQWL4V6T watermarknn-master % python train.py --model resnet --batch_size 100 --max_epochs 5 --runname train --wm_batch_size 2 --wmtrain
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+torch.Size([1, 10])
+==> Preparing data..
+Using CIFAR10 dataset.
+Files already downloaded and verified
+Files already downloaded and verified
+Loading watermark images
+==> Building model..
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s439ms | Loss: 2.300 | Acc: 13.000% (13/100)                            
+
+Epoch: 0
+ [=========================== 500/500 ============================>]  Step: 3s510ms | Tot: 28m44s | Loss: 1.732 | Acc: 35.000% (17920/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s153ms | Tot: 1m55s | Loss: 1.614 | Acc: 44.000% (4410/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 29ms | Tot: 1s585ms | Loss: 3.056 | Acc: 13.000% (13/100)                            
+Saving..
+
+Epoch: 1
+ [=========================== 500/500 ============================>]  Step: 3s465ms | Tot: 28m55s | Loss: 1.251 | Acc: 54.000% (28013/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s155ms | Tot: 1m55s | Loss: 1.452 | Acc: 49.000% (4984/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s456ms | Loss: 2.604 | Acc: 22.000% (22/100)                            
+Saving..
+
+Epoch: 2
+ [=========================== 500/500 ============================>]  Step: 3s485ms | Tot: 29m25s | Loss: 1.000 | Acc: 64.000% (32921/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s204ms | Tot: 2m759ms | Loss: 1.157 | Acc: 61.000% (6138/10000)                     
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 34ms | Tot: 1s542ms | Loss: 2.341 | Acc: 18.000% (18/100)                            
+Saving..
+
+Epoch: 3
+ [=========================== 500/500 ============================>]  Step: 3s510ms | Tot: 29m14s | Loss: 0.824 | Acc: 71.000% (36494/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s154ms | Tot: 1m55s | Loss: 1.028 | Acc: 67.000% (6775/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 28ms | Tot: 1s461ms | Loss: 2.088 | Acc: 34.000% (34/100)                            
+Saving..
+
+Epoch: 4
+ [=========================== 500/500 ============================>]  Step: 3s468ms | Tot: 28m55s | Loss: 0.725 | Acc: 74.000% (38247/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 1s153ms | Tot: 1m55s | Loss: 1.040 | Acc: 66.000% (6645/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 27ms | Tot: 1s467ms | Loss: 1.974 | Acc: 32.000% (32/100)                            
+Saving..
+GoogleNet/InceptionV1:
+(speml) florian.haubenberger@AMACRHQWL4V6T watermarknn-master % python train.py --model googlenet --batch_size 100 --max_epochs 5 --runname train --wm_batch_size 2 --wmtrain
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+torch.Size([1, 10])
+==> Preparing data..
+Using CIFAR10 dataset.
+Files already downloaded and verified
+Files already downloaded and verified
+Loading watermark images
+==> Building model..
+using InceptionV1
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 53ms | Tot: 2s644ms | Loss: 2.300 | Acc: 14.000% (14/100)                            
+
+Epoch: 0
+ [=========================== 500/500 ============================>]  Step: 4s917ms | Tot: 40m47s | Loss: 1.768 | Acc: 35.000% (17922/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 2s215ms | Tot: 3m40s | Loss: 1.513 | Acc: 44.000% (4458/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 50ms | Tot: 2s582ms | Loss: 2.577 | Acc: 9.000% (9/100)                              
+Saving..
+
+Epoch: 1
+ [=========================== 500/500 ============================>]  Step: 4s951ms | Tot: 41m1s | Loss: 1.298 | Acc: 53.000% (27277/51000)                      
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 2s238ms | Tot: 3m43s | Loss: 1.301 | Acc: 53.000% (5355/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 51ms | Tot: 2s583ms | Loss: 2.482 | Acc: 12.000% (12/100)                            
+Saving..
+
+Epoch: 2
+ [=========================== 500/500 ============================>]  Step: 5s8ms | Tot: 41m10s | Loss: 1.085 | Acc: 61.000% (31607/51000)                       
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 2s253ms | Tot: 3m44s | Loss: 1.125 | Acc: 61.000% (6154/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 50ms | Tot: 2s588ms | Loss: 2.360 | Acc: 17.000% (17/100)                            
+Saving..
+
+Epoch: 3
+ [=========================== 500/500 ============================>]  Step: 4s957ms | Tot: 41m15s | Loss: 0.955 | Acc: 67.000% (34231/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 2s255ms | Tot: 3m45s | Loss: 1.071 | Acc: 63.000% (6365/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 53ms | Tot: 2s611ms | Loss: 2.185 | Acc: 18.000% (18/100)                            
+Saving..
+
+Epoch: 4
+ [=========================== 500/500 ============================>]  Step: 4s980ms | Tot: 41m22s | Loss: 0.870 | Acc: 70.000% (35844/51000)                     
+Test acc:
+ [=========================== 100/100 ============================>]  Step: 2s258ms | Tot: 3m46s | Loss: 0.930 | Acc: 69.000% (6923/10000)                       
+WM acc:
+ [=========================== 50/50 =============================>.]  Step: 50ms | Tot: 2s613ms | Loss: 2.232 | Acc: 22.000% (22/100)                            
+Saving..
+(speml) florian.haubenberger@AMACRHQWL4V6T watermarknn-master % 
